@@ -49,7 +49,7 @@ def thiessen_cal(dataset,data,RowOfDataset,RowOfData):
     return lista
 #output data
 def exportcsv(Datalist,output):
-    with open(output, 'w') as csv_file:
+    with open(output, 'w'，newline='') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerows(Datalist)
 
